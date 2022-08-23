@@ -1,0 +1,1361 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 5K of event 'cycles'
+# Event count (approx.): 6035981418
+#
+# Children      Self  Command      Shared Object        Symbol                                                                                                                                                                                                                            
+# ........  ........  ...........  ...................  ..................................................................................................................................................................................................................................
+#
+    99.05%     0.00%  kdtree_perf  libc-2.31.so         [.] __libc_start_main
+            |
+            ---__libc_start_main
+               |          
+                --99.03%--main
+                          |          
+                          |--79.16%--rangeSearch
+                          |          |          
+                          |           --79.07%--rangeSearch
+                          |                     |          
+                          |                      --79.02%--rangeSearch
+                          |                                |          
+                          |                                 --78.93%--rangeSearch
+                          |                                           |          
+                          |                                            --78.66%--rangeSearch
+                          |                                                      |          
+                          |                                                       --78.40%--rangeSearch
+                          |                                                                 |          
+                          |                                                                  --77.87%--rangeSearch
+                          |                                                                            |          
+                          |                                                                             --77.37%--rangeSearch
+                          |                                                                                       |          
+                          |                                                                                        --76.56%--rangeSearch
+                          |                                                                                                  |          
+                          |                                                                                                   --75.41%--rangeSearch
+                          |                                                                                                             |          
+                          |                                                                                                              --73.79%--rangeSearch
+                          |                                                                                                                        |          
+                          |                                                                                                                         --71.37%--rangeSearch
+                          |                                                                                                                                   |          
+                          |                                                                                                                                    --67.77%--rangeSearch
+                          |                                                                                                                                              |          
+                          |                                                                                                                                               --61.31%--rangeSearch
+                          |                                                                                                                                                         |          
+                          |                                                                                                                                                          --51.83%--rangeSearch
+                          |                                                                                                                                                                    |          
+                          |                                                                                                                                                                     --37.69%--rangeSearch
+                          |                                                                                                                                                                               |          
+                          |                                                                                                                                                                                --19.30%--rangeSearch
+                          |                                                                                                                                                                                          |          
+                          |                                                                                                                                                                                           --0.99%--rangeSearch
+                          |          
+                          |--17.97%--kdTreeConstruct
+                          |          |          
+                          |          |--16.24%--kdTreeConstruct
+                          |          |          |          
+                          |          |          |--14.59%--kdTreeConstruct
+                          |          |          |          |          
+                          |          |          |          |--13.03%--kdTreeConstruct
+                          |          |          |          |          |          
+                          |          |          |          |          |--11.48%--kdTreeConstruct
+                          |          |          |          |          |          |          
+                          |          |          |          |          |          |--9.90%--kdTreeConstruct
+                          |          |          |          |          |          |          |          
+                          |          |          |          |          |          |          |--8.51%--kdTreeConstruct
+                          |          |          |          |          |          |          |          |          
+                          |          |          |          |          |          |          |          |--7.24%--kdTreeConstruct
+                          |          |          |          |          |          |          |          |          |          
+                          |          |          |          |          |          |          |          |          |--6.08%--kdTreeConstruct
+                          |          |          |          |          |          |          |          |          |          |          
+                          |          |          |          |          |          |          |          |          |          |--4.91%--kdTreeConstruct
+                          |          |          |          |          |          |          |          |          |          |          |          
+                          |          |          |          |          |          |          |          |          |          |          |--3.97%--kdTreeConstruct
+                          |          |          |          |          |          |          |          |          |          |          |          |          
+                          |          |          |          |          |          |          |          |          |          |          |          |--3.20%--kdTreeConstruct
+                          |          |          |          |          |          |          |          |          |          |          |          |          |          
+                          |          |          |          |          |          |          |          |          |          |          |          |          |--2.39%--kdTreeConstruct
+                          |          |          |          |          |          |          |          |          |          |          |          |          |          |          
+                          |          |          |          |          |          |          |          |          |          |          |          |          |          |--1.51%--kdTreeConstruct
+                          |          |          |          |          |          |          |          |          |          |          |          |          |          |          |          
+                          |          |          |          |          |          |          |          |          |          |          |          |          |          |           --1.04%--kdTreeConstruct
+                          |          |          |          |          |          |          |          |          |          |          |          |          |          |                     |          
+                          |          |          |          |          |          |          |          |          |          |          |          |          |          |                      --0.51%--kdTreeConstruct
+                          |          |          |          |          |          |          |          |          |          |          |          |          |          |          
+                          |          |          |          |          |          |          |          |          |          |          |          |          |           --0.70%--findMedian
+                          |          |          |          |          |          |          |          |          |          |          |          |          |                     |          
+                          |          |          |          |          |          |          |          |          |          |          |          |          |                      --0.60%--std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+                          |          |          |          |          |          |          |          |          |          |          |          |          |                                std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          |          |          |          |          |          |          |          
+                          |          |          |          |          |          |          |          |          |          |          |          |           --0.72%--findMedian
+                          |          |          |          |          |          |          |          |          |          |          |          |                     |          
+                          |          |          |          |          |          |          |          |          |          |          |          |                      --0.69%--std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+                          |          |          |          |          |          |          |          |          |          |          |          |                                std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          |          |          |          |          |          |          
+                          |          |          |          |          |          |          |          |          |          |          |           --0.74%--findMedian
+                          |          |          |          |          |          |          |          |          |          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+                          |          |          |          |          |          |          |          |          |          |          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          |          |          |          |          |          
+                          |          |          |          |          |          |          |          |          |          |           --0.77%--findMedian
+                          |          |          |          |          |          |          |          |          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+                          |          |          |          |          |          |          |          |          |          |                     |          
+                          |          |          |          |          |          |          |          |          |          |                      --0.76%--std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          |          |          |          |          
+                          |          |          |          |          |          |          |          |          |           --1.07%--findMedian
+                          |          |          |          |          |          |          |          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+                          |          |          |          |          |          |          |          |          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          |          |          |                     |          
+                          |          |          |          |          |          |          |          |          |                      --0.67%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          |          |          |                                |          
+                          |          |          |          |          |          |          |          |          |                                 --0.53%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          |          |          |          
+                          |          |          |          |          |          |          |          |           --1.09%--findMedian
+                          |          |          |          |          |          |          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+                          |          |          |          |          |          |          |          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          |          |                     |          
+                          |          |          |          |          |          |          |          |                      --0.77%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          |          |                                |          
+                          |          |          |          |          |          |          |          |                                 --0.62%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          |          |          
+                          |          |          |          |          |          |          |           --1.18%--findMedian
+                          |          |          |          |          |          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+                          |          |          |          |          |          |          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          |                     |          
+                          |          |          |          |          |          |          |                      --0.88%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          |                                |          
+                          |          |          |          |          |          |          |                                 --0.77%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          |                                           |          
+                          |          |          |          |          |          |          |                                            --0.56%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          |          
+                          |          |          |          |          |          |           --1.30%--findMedian
+                          |          |          |          |          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+                          |          |          |          |          |          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |                     |          
+                          |          |          |          |          |          |                      --0.97%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |                                |          
+                          |          |          |          |          |          |                                 --0.88%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |                                           |          
+                          |          |          |          |          |          |                                            --0.65%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          
+                          |          |          |          |          |           --1.44%--findMedian
+                          |          |          |          |          |                     |          
+                          |          |          |          |          |                      --1.42%--std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+                          |          |          |          |          |                                std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |                                |          
+                          |          |          |          |          |                                 --1.11%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |                                           |          
+                          |          |          |          |          |                                            --0.93%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |                                                      |          
+                          |          |          |          |          |                                                       --0.74%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |                                                                 |          
+                          |          |          |          |          |                                                                  --0.51%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          
+                          |          |          |          |           --1.51%--findMedian
+                          |          |          |          |                     |          
+                          |          |          |          |                      --1.49%--std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+                          |          |          |          |                                std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |                                |          
+                          |          |          |          |                                 --1.21%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |                                           |          
+                          |          |          |          |                                            --1.07%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |                                                      |          
+                          |          |          |          |                                                       --0.93%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |                                                                 |          
+                          |          |          |          |                                                                  --0.74%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |                                                                            |          
+                          |          |          |          |                                                                             --0.51%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          
+                          |          |          |           --1.49%--findMedian
+                          |          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+                          |          |          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |                     |          
+                          |          |          |                      --1.28%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |                                |          
+                          |          |          |                                 --1.19%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |                                           |          
+                          |          |          |                                            --1.02%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |                                                      |          
+                          |          |          |                                                       --0.76%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |                                                                 |          
+                          |          |          |                                                                  --0.56%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          
+                          |          |           --1.57%--findMedian
+                          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+                          |          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |                     |          
+                          |          |                      --1.37%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |                                |          
+                          |          |                                 --1.21%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |                                           |          
+                          |          |                                            --1.00%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |                                                      |          
+                          |          |                                                       --0.86%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |                                                                 |          
+                          |          |                                                                  --0.62%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          
+                          |           --1.65%--findMedian
+                          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+                          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |                     |          
+                          |                      --1.48%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |                                |          
+                          |                                 --1.26%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |                                           |          
+                          |                                            --1.14%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |                                                      |          
+                          |                                                       --0.95%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |                                                                 |          
+                          |                                                                  --0.72%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |                                                                            |          
+                          |                                                                             --0.58%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          
+                           --1.63%--__isoc99_fscanf
+                                     |          
+                                      --1.33%--__vfscanf_internal
+
+    99.03%     0.00%  kdtree_perf  kdtree_perf          [.] main
+            |
+            ---main
+               |          
+               |--79.16%--rangeSearch
+               |          |          
+               |           --79.07%--rangeSearch
+               |                     |          
+               |                      --79.02%--rangeSearch
+               |                                |          
+               |                                 --78.93%--rangeSearch
+               |                                           |          
+               |                                            --78.66%--rangeSearch
+               |                                                      |          
+               |                                                       --78.40%--rangeSearch
+               |                                                                 |          
+               |                                                                  --77.87%--rangeSearch
+               |                                                                            |          
+               |                                                                             --77.37%--rangeSearch
+               |                                                                                       |          
+               |                                                                                        --76.56%--rangeSearch
+               |                                                                                                  |          
+               |                                                                                                   --75.41%--rangeSearch
+               |                                                                                                             |          
+               |                                                                                                              --73.79%--rangeSearch
+               |                                                                                                                        |          
+               |                                                                                                                         --71.37%--rangeSearch
+               |                                                                                                                                   |          
+               |                                                                                                                                    --67.77%--rangeSearch
+               |                                                                                                                                              |          
+               |                                                                                                                                               --61.31%--rangeSearch
+               |                                                                                                                                                         |          
+               |                                                                                                                                                          --51.83%--rangeSearch
+               |                                                                                                                                                                    |          
+               |                                                                                                                                                                     --37.69%--rangeSearch
+               |                                                                                                                                                                               |          
+               |                                                                                                                                                                                --19.30%--rangeSearch
+               |                                                                                                                                                                                          |          
+               |                                                                                                                                                                                           --0.99%--rangeSearch
+               |          
+               |--17.97%--kdTreeConstruct
+               |          |          
+               |          |--16.24%--kdTreeConstruct
+               |          |          |          
+               |          |          |--14.59%--kdTreeConstruct
+               |          |          |          |          
+               |          |          |          |--13.03%--kdTreeConstruct
+               |          |          |          |          |          
+               |          |          |          |          |--11.48%--kdTreeConstruct
+               |          |          |          |          |          |          
+               |          |          |          |          |          |--9.90%--kdTreeConstruct
+               |          |          |          |          |          |          |          
+               |          |          |          |          |          |          |--8.51%--kdTreeConstruct
+               |          |          |          |          |          |          |          |          
+               |          |          |          |          |          |          |          |--7.24%--kdTreeConstruct
+               |          |          |          |          |          |          |          |          |          
+               |          |          |          |          |          |          |          |          |--6.08%--kdTreeConstruct
+               |          |          |          |          |          |          |          |          |          |          
+               |          |          |          |          |          |          |          |          |          |--4.91%--kdTreeConstruct
+               |          |          |          |          |          |          |          |          |          |          |          
+               |          |          |          |          |          |          |          |          |          |          |--3.97%--kdTreeConstruct
+               |          |          |          |          |          |          |          |          |          |          |          |          
+               |          |          |          |          |          |          |          |          |          |          |          |--3.20%--kdTreeConstruct
+               |          |          |          |          |          |          |          |          |          |          |          |          |          
+               |          |          |          |          |          |          |          |          |          |          |          |          |--2.39%--kdTreeConstruct
+               |          |          |          |          |          |          |          |          |          |          |          |          |          |          
+               |          |          |          |          |          |          |          |          |          |          |          |          |          |--1.51%--kdTreeConstruct
+               |          |          |          |          |          |          |          |          |          |          |          |          |          |          |          
+               |          |          |          |          |          |          |          |          |          |          |          |          |          |           --1.04%--kdTreeConstruct
+               |          |          |          |          |          |          |          |          |          |          |          |          |          |                     |          
+               |          |          |          |          |          |          |          |          |          |          |          |          |          |                      --0.51%--kdTreeConstruct
+               |          |          |          |          |          |          |          |          |          |          |          |          |          |          
+               |          |          |          |          |          |          |          |          |          |          |          |          |           --0.70%--findMedian
+               |          |          |          |          |          |          |          |          |          |          |          |          |                     |          
+               |          |          |          |          |          |          |          |          |          |          |          |          |                      --0.60%--std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+               |          |          |          |          |          |          |          |          |          |          |          |          |                                std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |          |          |          |          |          |          |          |          |          
+               |          |          |          |          |          |          |          |          |          |          |          |           --0.72%--findMedian
+               |          |          |          |          |          |          |          |          |          |          |          |                     |          
+               |          |          |          |          |          |          |          |          |          |          |          |                      --0.69%--std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+               |          |          |          |          |          |          |          |          |          |          |          |                                std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |          |          |          |          |          |          |          |          
+               |          |          |          |          |          |          |          |          |          |          |           --0.74%--findMedian
+               |          |          |          |          |          |          |          |          |          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+               |          |          |          |          |          |          |          |          |          |          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |          |          |          |          |          |          |          
+               |          |          |          |          |          |          |          |          |          |           --0.77%--findMedian
+               |          |          |          |          |          |          |          |          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+               |          |          |          |          |          |          |          |          |          |                     |          
+               |          |          |          |          |          |          |          |          |          |                      --0.76%--std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |          |          |          |          |          |          
+               |          |          |          |          |          |          |          |          |           --1.07%--findMedian
+               |          |          |          |          |          |          |          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+               |          |          |          |          |          |          |          |          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |          |          |          |          |                     |          
+               |          |          |          |          |          |          |          |          |                      --0.67%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |          |          |          |          |                                |          
+               |          |          |          |          |          |          |          |          |                                 --0.53%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |          |          |          |          |          
+               |          |          |          |          |          |          |          |           --1.09%--findMedian
+               |          |          |          |          |          |          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+               |          |          |          |          |          |          |          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |          |          |          |                     |          
+               |          |          |          |          |          |          |          |                      --0.77%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |          |          |          |                                |          
+               |          |          |          |          |          |          |          |                                 --0.62%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |          |          |          |          
+               |          |          |          |          |          |          |           --1.18%--findMedian
+               |          |          |          |          |          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+               |          |          |          |          |          |          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |          |          |                     |          
+               |          |          |          |          |          |          |                      --0.88%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |          |          |                                |          
+               |          |          |          |          |          |          |                                 --0.77%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |          |          |                                           |          
+               |          |          |          |          |          |          |                                            --0.56%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |          |          |          
+               |          |          |          |          |          |           --1.30%--findMedian
+               |          |          |          |          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+               |          |          |          |          |          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |          |                     |          
+               |          |          |          |          |          |                      --0.97%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |          |                                |          
+               |          |          |          |          |          |                                 --0.88%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |          |                                           |          
+               |          |          |          |          |          |                                            --0.65%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |          |          
+               |          |          |          |          |           --1.44%--findMedian
+               |          |          |          |          |                     |          
+               |          |          |          |          |                      --1.42%--std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+               |          |          |          |          |                                std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |                                |          
+               |          |          |          |          |                                 --1.11%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |                                           |          
+               |          |          |          |          |                                            --0.93%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |                                                      |          
+               |          |          |          |          |                                                       --0.74%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |                                                                 |          
+               |          |          |          |          |                                                                  --0.51%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          |          
+               |          |          |          |           --1.51%--findMedian
+               |          |          |          |                     |          
+               |          |          |          |                      --1.49%--std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+               |          |          |          |                                std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |                                |          
+               |          |          |          |                                 --1.21%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |                                           |          
+               |          |          |          |                                            --1.07%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |                                                      |          
+               |          |          |          |                                                       --0.93%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |                                                                 |          
+               |          |          |          |                                                                  --0.74%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |                                                                            |          
+               |          |          |          |                                                                             --0.51%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          |          
+               |          |          |           --1.49%--findMedian
+               |          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+               |          |          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |                     |          
+               |          |          |                      --1.28%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |                                |          
+               |          |          |                                 --1.19%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |                                           |          
+               |          |          |                                            --1.02%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |                                                      |          
+               |          |          |                                                       --0.76%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |                                                                 |          
+               |          |          |                                                                  --0.56%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          |          
+               |          |           --1.57%--findMedian
+               |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+               |          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |                     |          
+               |          |                      --1.37%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |                                |          
+               |          |                                 --1.21%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |                                           |          
+               |          |                                            --1.00%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |                                                      |          
+               |          |                                                       --0.86%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |                                                                 |          
+               |          |                                                                  --0.62%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          |          
+               |           --1.65%--findMedian
+               |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+               |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |                     |          
+               |                      --1.48%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |                                |          
+               |                                 --1.26%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |                                           |          
+               |                                            --1.14%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |                                                      |          
+               |                                                       --0.95%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |                                                                 |          
+               |                                                                  --0.72%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |                                                                            |          
+               |                                                                             --0.58%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+               |          
+                --1.63%--__isoc99_fscanf
+                          |          
+                           --1.33%--__vfscanf_internal
+
+    79.16%    79.10%  kdtree_perf  kdtree_perf          [.] rangeSearch
+            |          
+             --79.10%--__libc_start_main
+                       main
+                       rangeSearch
+                       |          
+                        --79.02%--rangeSearch
+                                  |          
+                                   --78.96%--rangeSearch
+                                             |          
+                                              --78.87%--rangeSearch
+                                                        |          
+                                                         --78.61%--rangeSearch
+                                                                   |          
+                                                                    --78.34%--rangeSearch
+                                                                              |          
+                                                                               --77.81%--rangeSearch
+                                                                                         |          
+                                                                                          --77.32%--rangeSearch
+                                                                                                    |          
+                                                                                                     --76.51%--rangeSearch
+                                                                                                               |          
+                                                                                                                --75.36%--rangeSearch
+                                                                                                                          |          
+                                                                                                                           --73.74%--rangeSearch
+                                                                                                                                     |          
+                                                                                                                                      --71.32%--rangeSearch
+                                                                                                                                                |          
+                                                                                                                                                 --67.74%--rangeSearch
+                                                                                                                                                           |          
+                                                                                                                                                            --61.27%--rangeSearch
+                                                                                                                                                                      |          
+                                                                                                                                                                       --51.81%--rangeSearch
+                                                                                                                                                                                 |          
+                                                                                                                                                                                  --37.68%--rangeSearch
+                                                                                                                                                                                            |          
+                                                                                                                                                                                             --19.30%--rangeSearch
+                                                                                                                                                                                                       |          
+                                                                                                                                                                                                        --0.99%--rangeSearch
+
+    17.97%     0.97%  kdtree_perf  kdtree_perf          [.] kdTreeConstruct
+            |          
+            |--17.00%--kdTreeConstruct
+            |          |          
+            |          |--15.33%--kdTreeConstruct
+            |          |          |          
+            |          |          |--13.75%--kdTreeConstruct
+            |          |          |          |          
+            |          |          |          |--12.22%--kdTreeConstruct
+            |          |          |          |          |          
+            |          |          |          |          |--10.71%--kdTreeConstruct
+            |          |          |          |          |          |          
+            |          |          |          |          |          |--9.21%--kdTreeConstruct
+            |          |          |          |          |          |          |          
+            |          |          |          |          |          |          |--7.88%--kdTreeConstruct
+            |          |          |          |          |          |          |          |          
+            |          |          |          |          |          |          |          |--6.70%--kdTreeConstruct
+            |          |          |          |          |          |          |          |          |          
+            |          |          |          |          |          |          |          |          |--5.59%--kdTreeConstruct
+            |          |          |          |          |          |          |          |          |          |          
+            |          |          |          |          |          |          |          |          |          |--4.52%--kdTreeConstruct
+            |          |          |          |          |          |          |          |          |          |          |          
+            |          |          |          |          |          |          |          |          |          |          |--3.67%--kdTreeConstruct
+            |          |          |          |          |          |          |          |          |          |          |          |          
+            |          |          |          |          |          |          |          |          |          |          |          |--2.92%--kdTreeConstruct
+            |          |          |          |          |          |          |          |          |          |          |          |          |          
+            |          |          |          |          |          |          |          |          |          |          |          |          |--2.16%--kdTreeConstruct
+            |          |          |          |          |          |          |          |          |          |          |          |          |          |          
+            |          |          |          |          |          |          |          |          |          |          |          |          |          |--1.42%--kdTreeConstruct
+            |          |          |          |          |          |          |          |          |          |          |          |          |          |          |          
+            |          |          |          |          |          |          |          |          |          |          |          |          |          |           --1.00%--kdTreeConstruct
+            |          |          |          |          |          |          |          |          |          |          |          |          |          |          
+            |          |          |          |          |          |          |          |          |          |          |          |          |           --0.70%--findMedian
+            |          |          |          |          |          |          |          |          |          |          |          |          |                     |          
+            |          |          |          |          |          |          |          |          |          |          |          |          |                      --0.60%--std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+            |          |          |          |          |          |          |          |          |          |          |          |          |                                std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |          |          |          |          |          |          |          |          |          
+            |          |          |          |          |          |          |          |          |          |          |          |           --0.72%--findMedian
+            |          |          |          |          |          |          |          |          |          |          |          |                     |          
+            |          |          |          |          |          |          |          |          |          |          |          |                      --0.69%--std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+            |          |          |          |          |          |          |          |          |          |          |          |                                std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |          |          |          |          |          |          |          |          
+            |          |          |          |          |          |          |          |          |          |          |           --0.74%--findMedian
+            |          |          |          |          |          |          |          |          |          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+            |          |          |          |          |          |          |          |          |          |          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |          |          |          |          |          |          |          
+            |          |          |          |          |          |          |          |          |          |           --0.77%--findMedian
+            |          |          |          |          |          |          |          |          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+            |          |          |          |          |          |          |          |          |          |                     |          
+            |          |          |          |          |          |          |          |          |          |                      --0.76%--std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |          |          |          |          |          |          
+            |          |          |          |          |          |          |          |          |           --1.07%--findMedian
+            |          |          |          |          |          |          |          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+            |          |          |          |          |          |          |          |          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |          |          |          |          |                     |          
+            |          |          |          |          |          |          |          |          |                      --0.67%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |          |          |          |          |                                |          
+            |          |          |          |          |          |          |          |          |                                 --0.53%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |          |          |          |          |          
+            |          |          |          |          |          |          |          |           --1.09%--findMedian
+            |          |          |          |          |          |          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+            |          |          |          |          |          |          |          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |          |          |          |                     |          
+            |          |          |          |          |          |          |          |                      --0.77%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |          |          |          |                                |          
+            |          |          |          |          |          |          |          |                                 --0.62%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |          |          |          |          
+            |          |          |          |          |          |          |           --1.18%--findMedian
+            |          |          |          |          |          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+            |          |          |          |          |          |          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |          |          |                     |          
+            |          |          |          |          |          |          |                      --0.88%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |          |          |                                |          
+            |          |          |          |          |          |          |                                 --0.77%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |          |          |                                           |          
+            |          |          |          |          |          |          |                                            --0.56%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |          |          |          
+            |          |          |          |          |          |           --1.30%--findMedian
+            |          |          |          |          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+            |          |          |          |          |          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |          |                     |          
+            |          |          |          |          |          |                      --0.97%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |          |                                |          
+            |          |          |          |          |          |                                 --0.88%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |          |                                           |          
+            |          |          |          |          |          |                                            --0.65%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |          |          
+            |          |          |          |          |           --1.44%--findMedian
+            |          |          |          |          |                     |          
+            |          |          |          |          |                      --1.42%--std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+            |          |          |          |          |                                std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |                                |          
+            |          |          |          |          |                                 --1.11%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |                                           |          
+            |          |          |          |          |                                            --0.93%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |                                                      |          
+            |          |          |          |          |                                                       --0.74%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |                                                                 |          
+            |          |          |          |          |                                                                  --0.51%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          |          
+            |          |          |          |           --1.51%--findMedian
+            |          |          |          |                     |          
+            |          |          |          |                      --1.49%--std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+            |          |          |          |                                std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |                                |          
+            |          |          |          |                                 --1.21%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |                                           |          
+            |          |          |          |                                            --1.07%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |                                                      |          
+            |          |          |          |                                                       --0.93%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |                                                                 |          
+            |          |          |          |                                                                  --0.74%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |                                                                            |          
+            |          |          |          |                                                                             --0.51%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          |          
+            |          |          |           --1.49%--findMedian
+            |          |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+            |          |          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |                     |          
+            |          |          |                      --1.28%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |                                |          
+            |          |          |                                 --1.19%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |                                           |          
+            |          |          |                                            --1.02%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |                                                      |          
+            |          |          |                                                       --0.76%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |                                                                 |          
+            |          |          |                                                                  --0.56%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          |          
+            |          |           --1.57%--findMedian
+            |          |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+            |          |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |                     |          
+            |          |                      --1.37%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |                                |          
+            |          |                                 --1.21%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |                                           |          
+            |          |                                            --1.00%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |                                                      |          
+            |          |                                                       --0.86%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |                                                                 |          
+            |          |                                                                  --0.62%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          
+            |           --1.65%--findMedian
+            |                     std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+            |                     std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |                     |          
+            |                      --1.48%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |                                |          
+            |                                 --1.26%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |                                           |          
+            |                                            --1.14%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |                                                      |          
+            |                                                       --0.95%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |                                                                 |          
+            |                                                                  --0.72%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |                                                                            |          
+            |                                                                             --0.58%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          
+             --0.97%--__libc_start_main
+                       main
+                       kdTreeConstruct
+                       |          
+                        --0.91%--kdTreeConstruct
+                                  |          
+                                   --0.84%--kdTreeConstruct
+                                             |          
+                                              --0.81%--kdTreeConstruct
+                                                        |          
+                                                         --0.77%--kdTreeConstruct
+                                                                   |          
+                                                                    --0.69%--kdTreeConstruct
+                                                                              |          
+                                                                               --0.63%--kdTreeConstruct
+                                                                                         |          
+                                                                                          --0.55%--kdTreeConstruct
+
+    16.56%     0.00%  kdtree_perf  kdtree_perf          [.] findMedian
+            |
+            ---findMedian
+               |          
+                --15.93%--std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+                          |          
+                           --15.89%--std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          
+                                     |--11.14%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          |          
+                                     |          |--9.21%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          |          |          
+                                     |          |          |--6.96%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          |          |          |          
+                                     |          |          |          |--5.03%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          |          |          |          |          
+                                     |          |          |          |          |--3.48%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          |          |          |          |          |          
+                                     |          |          |          |          |          |--2.23%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          |          |          |          |          |          |          
+                                     |          |          |          |          |          |          |--1.35%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          |          |          |          |          |          |          |          
+                                     |          |          |          |          |          |          |          |--0.79%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          |          |          |          |          |          |          |          
+                                     |          |          |          |          |          |          |           --0.56%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          |          |          |          |          |          |                     |          
+                                     |          |          |          |          |          |          |                      --0.54%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          |          |          |          |          |          |          
+                                     |          |          |          |          |          |           --0.86%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          |          |          |          |          |                     |          
+                                     |          |          |          |          |          |                      --0.76%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          |          |          |          |          |          
+                                     |          |          |          |          |           --1.25%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          |          |          |          |                     |          
+                                     |          |          |          |          |                      --1.13%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          |          |          |          |                                |          
+                                     |          |          |          |          |                                 --0.58%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                                     |          |          |          |          |          
+                                     |          |          |          |           --1.53%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          |          |          |                     |          
+                                     |          |          |          |                      --1.35%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          |          |          |                                |          
+                                     |          |          |          |                                 --0.83%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                                     |          |          |          |          
+                                     |          |          |           --1.92%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          |          |                     |          
+                                     |          |          |                      --1.62%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          |          |                                |          
+                                     |          |          |                                 --0.88%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                                     |          |          |          
+                                     |          |           --2.23%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          |                     |          
+                                     |          |                      --1.97%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          |                                |          
+                                     |          |                                 --1.00%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                                     |          |                                           |          
+                                     |          |                                            --0.54%--comparison_obj::operator()
+                                     |          |          
+                                     |           --1.90%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |                     |          
+                                     |                      --1.60%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |                                |          
+                                     |                                 --0.69%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                                     |          
+                                      --4.69%--std::__final_insertion_sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                                |          
+                                                |--3.41%--std::__unguarded_insertion_sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                                |          |          
+                                                |           --2.32%--std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Val_comp_iter<comparison_obj> >
+                                                |                     |          
+                                                |                      --1.05%--__gnu_cxx::__ops::_Val_comp_iter<comparison_obj>::operator()<int*, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                                                |                                |          
+                                                |                                 --0.58%--comparison_obj::operator()
+                                                |          
+                                                 --1.13%--std::__insertion_sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+
+    15.93%     0.00%  kdtree_perf  kdtree_perf          [.] std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+            |
+            ---std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+               |          
+                --15.89%--std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          
+                          |--11.14%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          
+                          |          |--9.21%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          
+                          |          |          |--6.96%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          
+                          |          |          |          |--5.03%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          
+                          |          |          |          |          |--3.48%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          
+                          |          |          |          |          |          |--2.23%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          |          
+                          |          |          |          |          |          |          |--1.35%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          |          |          
+                          |          |          |          |          |          |          |          |--0.79%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          |          |          
+                          |          |          |          |          |          |          |           --0.56%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          |                     |          
+                          |          |          |          |          |          |          |                      --0.54%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          |          
+                          |          |          |          |          |          |           --0.86%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |                     |          
+                          |          |          |          |          |          |                      --0.76%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |          |          
+                          |          |          |          |          |           --1.25%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |                     |          
+                          |          |          |          |          |                      --1.13%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |          |                                |          
+                          |          |          |          |          |                                 --0.58%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                          |          |          |          |          |          
+                          |          |          |          |           --1.53%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |                     |          
+                          |          |          |          |                      --1.35%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |          |                                |          
+                          |          |          |          |                                 --0.83%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                          |          |          |          |          
+                          |          |          |           --1.92%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |                     |          
+                          |          |          |                      --1.62%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |          |                                |          
+                          |          |          |                                 --0.88%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                          |          |          |          
+                          |          |           --2.23%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |                     |          
+                          |          |                      --1.97%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |          |                                |          
+                          |          |                                 --1.00%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                          |          |                                           |          
+                          |          |                                            --0.54%--comparison_obj::operator()
+                          |          |          
+                          |           --1.90%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |                     |          
+                          |                      --1.60%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                          |                                |          
+                          |                                 --0.69%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                          |          
+                           --4.69%--std::__final_insertion_sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          
+                                     |--3.41%--std::__unguarded_insertion_sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                     |          |          
+                                     |           --2.32%--std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Val_comp_iter<comparison_obj> >
+                                     |                     |          
+                                     |                      --1.05%--__gnu_cxx::__ops::_Val_comp_iter<comparison_obj>::operator()<int*, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                                     |                                |          
+                                     |                                 --0.58%--comparison_obj::operator()
+                                     |          
+                                      --1.13%--std::__insertion_sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+
+    15.89%     0.02%  kdtree_perf  kdtree_perf          [.] std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          
+             --15.87%--std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          
+                       |--11.14%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          
+                       |          |--9.21%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          
+                       |          |          |--6.96%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |          
+                       |          |          |          |--5.03%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |          |          
+                       |          |          |          |          |--3.48%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |          |          |          
+                       |          |          |          |          |          |--2.23%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |          |          |          |          
+                       |          |          |          |          |          |          |--1.35%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |          |          |          |          |          
+                       |          |          |          |          |          |          |          |--0.79%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |          |          |          |          |          
+                       |          |          |          |          |          |          |           --0.56%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |          |          |          |                     |          
+                       |          |          |          |          |          |          |                      --0.54%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |          |          |          |          
+                       |          |          |          |          |          |           --0.86%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |          |          |                     |          
+                       |          |          |          |          |          |                      --0.76%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |          |          |          
+                       |          |          |          |          |           --1.25%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |          |                     |          
+                       |          |          |          |          |                      --1.13%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |          |                                |          
+                       |          |          |          |          |                                 --0.58%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                       |          |          |          |          |          
+                       |          |          |          |           --1.53%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |                     |          
+                       |          |          |          |                      --1.35%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |                                |          
+                       |          |          |          |                                 --0.83%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                       |          |          |          |          
+                       |          |          |           --1.92%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |                     |          
+                       |          |          |                      --1.62%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |                                |          
+                       |          |          |                                 --0.88%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                       |          |          |          
+                       |          |           --2.23%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |                     |          
+                       |          |                      --1.97%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |                                |          
+                       |          |                                 --1.00%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                       |          |                                           |          
+                       |          |                                            --0.54%--comparison_obj::operator()
+                       |          |          
+                       |           --1.90%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |                     |          
+                       |                      --1.60%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |                                |          
+                       |                                 --0.69%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                       |          
+                        --4.69%--std::__final_insertion_sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                  |          
+                                  |--3.41%--std::__unguarded_insertion_sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                  |          |          
+                                  |           --2.32%--std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Val_comp_iter<comparison_obj> >
+                                  |                     |          
+                                  |                      --1.05%--__gnu_cxx::__ops::_Val_comp_iter<comparison_obj>::operator()<int*, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                                  |                                |          
+                                  |                                 --0.58%--comparison_obj::operator()
+                                  |          
+                                   --1.13%--std::__insertion_sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+
+    11.14%     0.02%  kdtree_perf  kdtree_perf          [.] std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          
+             --11.13%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          
+                       |--9.21%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          
+                       |          |--6.96%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          
+                       |          |          |--5.03%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |          
+                       |          |          |          |--3.48%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |          |          
+                       |          |          |          |          |--2.23%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |          |          |          
+                       |          |          |          |          |          |--1.35%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |          |          |          |          
+                       |          |          |          |          |          |          |--0.79%--std::__introsort_loop<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, long, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |          |          |          |          
+                       |          |          |          |          |          |           --0.56%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |          |          |                     |          
+                       |          |          |          |          |          |                      --0.54%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |          |          |          
+                       |          |          |          |          |           --0.86%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |          |                     |          
+                       |          |          |          |          |                      --0.76%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |          |          
+                       |          |          |          |           --1.25%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |                     |          
+                       |          |          |          |                      --1.13%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |          |                                |          
+                       |          |          |          |                                 --0.58%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                       |          |          |          |          
+                       |          |          |           --1.53%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |                     |          
+                       |          |          |                      --1.35%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          |                                |          
+                       |          |          |                                 --0.83%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                       |          |          |          
+                       |          |           --1.92%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |                     |          
+                       |          |                      --1.62%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |                                |          
+                       |          |                                 --0.88%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                       |          |          
+                       |           --2.23%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |                     |          
+                       |                      --1.97%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |                                |          
+                       |                                 --1.00%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                       |                                           |          
+                       |                                            --0.54%--comparison_obj::operator()
+                       |          
+                        --1.90%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                  |          
+                                   --1.60%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                             |          
+                                              --0.69%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+
+    11.04%     0.02%  kdtree_perf  kdtree_perf          [.] std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          
+             --11.02%--std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          
+                        --9.63%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                                  |          
+                                  |--4.83%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                                  |          |          
+                                  |          |--2.67%--comparison_obj::operator()
+                                  |          |          
+                                  |           --0.79%--__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >::operator*
+                                  |          
+                                  |--1.07%--std::iter_swap<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                                  |          |          
+                                  |           --0.60%--std::swap<int*>
+                                  |          
+                                  |--0.62%--__gnu_cxx::operator< <int**, std::vector<int*, std::allocator<int*> > >
+                                  |          
+                                   --0.54%--__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >::operator++
+
+     9.65%     1.58%  kdtree_perf  kdtree_perf          [.] std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          
+            |--8.07%--std::__unguarded_partition<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          |          
+            |          |--4.83%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+            |          |          |          
+            |          |          |--2.67%--comparison_obj::operator()
+            |          |          |          
+            |          |           --0.79%--__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >::operator*
+            |          |          
+            |          |--1.07%--std::iter_swap<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+            |          |          |          
+            |          |           --0.60%--std::swap<int*>
+            |          |          
+            |          |--0.62%--__gnu_cxx::operator< <int**, std::vector<int*, std::allocator<int*> > >
+            |          |          
+            |           --0.54%--__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >::operator++
+            |          
+             --1.58%--__libc_start_main
+                       main
+                       kdTreeConstruct
+                       |          
+                        --1.30%--kdTreeConstruct
+                                  |          
+                                   --1.11%--kdTreeConstruct
+                                             |          
+                                              --0.84%--kdTreeConstruct
+                                                        |          
+                                                         --0.62%--kdTreeConstruct
+                                                                   |          
+                                                                    --0.51%--kdTreeConstruct
+
+     5.33%     1.81%  kdtree_perf  kdtree_perf          [.] __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+            |          
+            |--3.52%--__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::operator()<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+            |          |          
+            |          |--2.67%--comparison_obj::operator()
+            |          |          
+            |           --0.84%--__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >::operator*
+            |          
+             --1.81%--__libc_start_main
+                       main
+                       kdTreeConstruct
+                       |          
+                        --1.63%--kdTreeConstruct
+                                  |          
+                                   --1.55%--kdTreeConstruct
+                                             |          
+                                              --1.25%--kdTreeConstruct
+                                                        |          
+                                                         --1.16%--kdTreeConstruct
+                                                                   |          
+                                                                    --0.84%--kdTreeConstruct
+                                                                              |          
+                                                                               --0.62%--kdTreeConstruct
+
+     4.71%     0.02%  kdtree_perf  kdtree_perf          [.] std::__final_insertion_sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          
+             --4.69%--std::__final_insertion_sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          
+                       |--3.41%--std::__unguarded_insertion_sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          |          
+                       |           --2.32%--std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Val_comp_iter<comparison_obj> >
+                       |                     |          
+                       |                      --1.05%--__gnu_cxx::__ops::_Val_comp_iter<comparison_obj>::operator()<int*, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                       |                                |          
+                       |                                 --0.58%--comparison_obj::operator()
+                       |          
+                        --1.13%--std::__insertion_sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+
+     3.46%     3.46%  kdtree_perf  kdtree_perf          [.] comparison_obj::operator()
+            |
+            ---__libc_start_main
+               main
+               kdTreeConstruct
+               |          
+                --3.11%--kdTreeConstruct
+                          |          
+                           --2.64%--kdTreeConstruct
+                                     |          
+                                      --2.32%--kdTreeConstruct
+                                                |          
+                                                |--1.81%--kdTreeConstruct
+                                                |          |          
+                                                |           --1.46%--kdTreeConstruct
+                                                |                     |          
+                                                |                      --1.27%--kdTreeConstruct
+                                                |                                |          
+                                                |                                 --1.04%--kdTreeConstruct
+                                                |                                           |          
+                                                |                                            --0.84%--kdTreeConstruct
+                                                |                                                      |          
+                                                |                                                       --0.58%--kdTreeConstruct
+                                                |          
+                                                 --0.51%--findMedian
+                                                           std::sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, comparison_obj>
+                                                           std::__sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+
+     3.41%     0.09%  kdtree_perf  kdtree_perf          [.] std::__unguarded_insertion_sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          
+             --3.32%--std::__unguarded_insertion_sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+                       |          
+                        --2.32%--std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Val_comp_iter<comparison_obj> >
+                                  |          
+                                   --1.05%--__gnu_cxx::__ops::_Val_comp_iter<comparison_obj>::operator()<int*, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                                             |          
+                                              --0.58%--comparison_obj::operator()
+
+     2.76%     0.83%  kdtree_perf  kdtree_perf          [.] std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Val_comp_iter<comparison_obj> >
+            |          
+            |--1.93%--std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Val_comp_iter<comparison_obj> >
+            |          |          
+            |           --1.21%--__gnu_cxx::__ops::_Val_comp_iter<comparison_obj>::operator()<int*, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+            |                     |          
+            |                      --0.65%--comparison_obj::operator()
+            |          
+             --0.83%--__libc_start_main
+                       main
+                       kdTreeConstruct
+                       |          
+                        --0.77%--kdTreeConstruct
+                                  |          
+                                   --0.74%--kdTreeConstruct
+                                             |          
+                                              --0.69%--kdTreeConstruct
+                                                        |          
+                                                         --0.63%--kdTreeConstruct
+                                                                   |          
+                                                                    --0.58%--kdTreeConstruct
+                                                                              |          
+                                                                               --0.53%--kdTreeConstruct
+
+     2.18%     2.18%  kdtree_perf  kdtree_perf          [.] __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >::operator*
+            |
+            ---__libc_start_main
+               main
+               kdTreeConstruct
+               |          
+                --1.93%--kdTreeConstruct
+                          |          
+                           --1.72%--kdTreeConstruct
+                                     |          
+                                      --1.46%--kdTreeConstruct
+                                                |          
+                                                 --1.25%--kdTreeConstruct
+                                                           |          
+                                                            --1.13%--kdTreeConstruct
+                                                                      |          
+                                                                       --0.95%--kdTreeConstruct
+                                                                                 |          
+                                                                                  --0.81%--kdTreeConstruct
+                                                                                            |          
+                                                                                             --0.70%--kdTreeConstruct
+                                                                                                       |          
+                                                                                                        --0.58%--kdTreeConstruct
+
+     1.63%     0.03%  kdtree_perf  libc-2.31.so         [.] __isoc99_fscanf
+            |          
+             --1.60%--__isoc99_fscanf
+                       |          
+                        --1.33%--__vfscanf_internal
+
+     1.33%     1.31%  kdtree_perf  libc-2.31.so         [.] __vfscanf_internal
+            |          
+             --1.31%--__libc_start_main
+                       main
+                       __isoc99_fscanf
+                       __vfscanf_internal
+
+     1.25%     0.33%  kdtree_perf  kdtree_perf          [.] __gnu_cxx::__ops::_Val_comp_iter<comparison_obj>::operator()<int*, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+            |          
+             --0.91%--__gnu_cxx::__ops::_Val_comp_iter<comparison_obj>::operator()<int*, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                       |          
+                        --0.65%--comparison_obj::operator()
+
+     1.20%     0.12%  kdtree_perf  kdtree_perf          [.] std::iter_swap<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+            |          
+             --1.07%--std::iter_swap<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+                       |          
+                        --0.65%--std::swap<int*>
+
+     1.13%     0.11%  kdtree_perf  kdtree_perf          [.] std::__insertion_sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+            |          
+             --1.02%--std::__insertion_sort<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+
+     0.98%     0.98%  kdtree_perf  kdtree_perf          [.] __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >::operator--
+            |
+            ---__libc_start_main
+               main
+               kdTreeConstruct
+               |          
+                --0.90%--kdTreeConstruct
+                          |          
+                           --0.79%--kdTreeConstruct
+                                     |          
+                                      --0.70%--kdTreeConstruct
+                                                |          
+                                                 --0.63%--kdTreeConstruct
+                                                           |          
+                                                            --0.53%--kdTreeConstruct
+
+     0.83%     0.58%  kdtree_perf  kdtree_perf          [.] __gnu_cxx::operator< <int**, std::vector<int*, std::allocator<int*> > >
+            |          
+             --0.58%--__libc_start_main
+                       main
+                       kdTreeConstruct
+                       |          
+                        --0.55%--kdTreeConstruct
+
+     0.81%     0.81%  kdtree_perf  kdtree_perf          [.] __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >::operator++
+            |
+            ---__libc_start_main
+               main
+               kdTreeConstruct
+               |          
+                --0.62%--kdTreeConstruct
+                          |          
+                           --0.53%--kdTreeConstruct
+
+     0.76%     0.76%  kdtree_perf  kdtree_perf          [.] std::move<int*&>
+            |
+            ---__libc_start_main
+               main
+               kdTreeConstruct
+               |          
+                --0.69%--kdTreeConstruct
+                          |          
+                           --0.56%--kdTreeConstruct
+                                     |          
+                                      --0.51%--kdTreeConstruct
+
+     0.69%     0.39%  kdtree_perf  kdtree_perf          [.] std::swap<int*>
+     0.63%     0.63%  kdtree_perf  kdtree_perf          [.] __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >::base
+            |
+            ---__libc_start_main
+               main
+               kdTreeConstruct
+               |          
+                --0.58%--kdTreeConstruct
+                          |          
+                           --0.51%--kdTreeConstruct
+                                     kdTreeConstruct
+
+     0.53%     0.28%  kdtree_perf  libc-2.31.so         [.] _int_malloc
+            |
+            ---_int_malloc
+
+     0.46%     0.02%  kdtree_perf  kdtree_perf          [.] std::vector<int*, std::allocator<int*> >::vector<int**, void>
+     0.44%     0.25%  kdtree_perf  kdtree_perf          [.] __gnu_cxx::__ops::__val_comp_iter<comparison_obj>
+     0.43%     0.35%  kdtree_perf  kdtree_perf          [.] newPoints
+     0.37%     0.25%  kdtree_perf  kdtree_perf          [.] __gnu_cxx::operator!=<int**, std::vector<int*, std::allocator<int*> > >
+     0.37%     0.05%  kdtree_perf  kdtree_perf          [.] std::vector<int*, std::allocator<int*> >::_M_range_initialize<int**>
+     0.37%     0.05%  kdtree_perf  [kernel.kallsyms]    [k] page_fault
+     0.32%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] do_page_fault
+     0.32%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] __do_page_fault
+     0.32%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] do_user_addr_fault
+     0.30%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] handle_mm_fault
+     0.30%     0.02%  kdtree_perf  [kernel.kallsyms]    [k] __handle_mm_fault
+     0.29%     0.29%  kdtree_perf  libc-2.31.so         [.] __GI_____strtoll_l_internal
+     0.26%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] do_anonymous_page
+     0.23%     0.04%  kdtree_perf  kdtree_perf          [.] std::__move_median_to_first<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj> >
+     0.21%     0.02%  kdtree_perf  kdtree_perf          [.] std::__uninitialized_copy_a<int**, int**, int*>
+     0.21%     0.18%  kdtree_perf  kdtree_perf          [.] read_points_file
+     0.19%     0.02%  kdtree_perf  kdtree_perf          [.] std::uninitialized_copy<int**, int**>
+     0.18%     0.00%  kdtree_perf  kdtree_perf          [.] std::__uninitialized_copy<true>::__uninit_copy<int**, int**>
+     0.18%     0.14%  kdtree_perf  kdtree_perf          [.] __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >::operator+
+     0.16%     0.00%  kdtree_perf  kdtree_perf          [.] std::copy<int**, int**>
+     0.14%     0.14%  kdtree_perf  libc-2.31.so         [.] malloc
+     0.14%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] alloc_pages_vma
+     0.12%     0.09%  kdtree_perf  kdtree_perf          [.] __gnu_cxx::__ops::_Val_comp_iter<comparison_obj>::_Val_comp_iter
+     0.12%     0.11%  kdtree_perf  kdtree_perf          [.] __gnu_cxx::operator-<int**, std::vector<int*, std::allocator<int*> > >
+     0.12%     0.04%  kdtree_perf  kdtree_perf          [.] std::__copy_move_a2<false, int**, int**>
+     0.12%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] __alloc_pages_nodemask
+     0.12%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] get_page_from_freelist
+     0.12%     0.12%  kdtree_perf  libc-2.31.so         [.] _IO_sputbackc
+     0.12%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] entry_SYSCALL_64_after_hwframe
+     0.12%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] do_syscall_64
+     0.11%     0.04%  kdtree_perf  [kernel.kallsyms]    [k] release_pages
+     0.11%     0.11%  kdtree_perf  [kernel.kallsyms]    [k] clear_page_rep
+     0.09%     0.09%  kdtree_perf  kdtree_perf          [.] std::move<__gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>&>
+     0.09%     0.04%  kdtree_perf  [kernel.kallsyms]    [k] lru_cache_add_active_or_unevictable
+     0.07%     0.04%  kdtree_perf  kdtree_perf          [.] std::_Vector_base<int*, std::allocator<int*> >::~_Vector_base
+     0.07%     0.04%  kdtree_perf  kdtree_perf          [.] std::__copy_move_backward_a2<true, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+     0.07%     0.00%  kdtree_perf  kdtree_perf          [.] std::vector<int*, std::allocator<int*> >::~vector
+     0.07%     0.07%  kdtree_perf  kdtree_perf          [.] std::move<comparison_obj&>
+     0.07%     0.02%  kdtree_perf  kdtree_perf          [.] std::move_backward<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > > >
+     0.07%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] tlb_flush_mmu
+     0.07%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] free_pages_and_swap_cache
+     0.07%     0.07%  kdtree_perf  kdtree_perf          [.] __gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >::__normal_iterator
+     0.07%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] __x64_sys_exit_group
+     0.07%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] do_group_exit
+     0.07%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] do_exit
+     0.07%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] mmput
+     0.07%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] exit_mmap
+     0.07%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] unmap_vmas
+     0.07%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] unmap_single_vma
+     0.07%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] unmap_page_range
+     0.07%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] zap_pte_range.isra.0
+     0.07%     0.04%  kdtree_perf  kdtree_perf          [.] std::_Vector_base<int*, std::allocator<int*> >::_M_allocate
+     0.07%     0.04%  kdtree_perf  kdtree_perf          [.] std::__copy_move_a<false, int**, int**>
+     0.05%     0.02%  kdtree_perf  [kernel.kallsyms]    [k] apic_timer_interrupt
+     0.05%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] __lru_cache_add
+     0.05%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] pagevec_lru_move_fn
+     0.05%     0.00%  kdtree_perf  [unknown]            [k] 0000000000000000
+     0.04%     0.02%  kdtree_perf  kdtree_perf          [.] std::_Vector_base<int*, std::allocator<int*> >::_M_deallocate
+     0.04%     0.02%  kdtree_perf  kdtree_perf          [.] std::vector<int*, std::allocator<int*> >::_S_check_init_len
+     0.04%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] smp_apic_timer_interrupt
+     0.04%     0.04%  kdtree_perf  kdtree_perf          [.] std::__miter_base<int**>
+     0.04%     0.04%  kdtree_perf  kdtree_perf          [.] std::_Vector_base<int*, std::allocator<int*> >::_Vector_impl_data::_Vector_impl_data
+     0.04%     0.00%  kdtree_perf  kdtree_perf          [.] std::_Vector_base<int*, std::allocator<int*> >::_Vector_base
+     0.04%     0.04%  kdtree_perf  kdtree_perf          [.] std::vector<int*, std::allocator<int*> >::begin
+     0.04%     0.02%  kdtree_perf  [kernel.kallsyms]    [k] mem_cgroup_try_charge
+     0.04%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] mem_cgroup_try_charge_delay
+     0.04%     0.00%  kdtree_perf  libc-2.31.so         [.] fprintf
+     0.04%     0.04%  kdtree_perf  kdtree_perf          [.] std::__iterator_category<int**>
+     0.04%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] free_unref_page_list
+     0.04%     0.04%  kdtree_perf  kdtree_perf          [.] std::__niter_wrap<int**>
+     0.04%     0.00%  kdtree_perf  kdtree_perf          [.] std::allocator_traits<std::allocator<int*> >::allocate
+     0.04%     0.04%  kdtree_perf  kdtree_perf          [.] read_queries_file
+     0.04%     0.00%  kdtree_perf  libc-2.31.so         [.] __memmove_avx_unaligned_erms
+     0.03%     0.00%  kdtree_perf  libc-2.31.so         [.] read
+     0.02%     0.02%  kdtree_perf  ld-2.31.so           [.] _dl_lookup_symbol_x
+     0.02%     0.00%  kdtree_perf  [unknown]            [.] 0x41e589480000b264
+     0.02%     0.00%  kdtree_perf  ld-2.31.so           [.] _dl_sysdep_start
+     0.02%     0.00%  kdtree_perf  ld-2.31.so           [.] dl_main
+     0.02%     0.02%  kdtree_perf  [kernel.kallsyms]    [k] perf_iterate_ctx
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] perf_iterate_sb
+     0.02%     0.02%  kdtree_perf  libstdc++.so.6.0.28  [.] operator delete
+     0.02%     0.00%  kdtree_perf  kdtree_perf          [.] std::allocator_traits<std::allocator<int*> >::deallocate
+     0.02%     0.02%  kdtree_perf  kdtree_perf          [.] __gnu_cxx::__ops::_Iter_comp_iter<comparison_obj>::_Iter_comp_iter
+     0.02%     0.00%  kdtree_perf  kdtree_perf          [.] __gnu_cxx::__ops::__iter_comp_iter<comparison_obj>
+     0.02%     0.02%  kdtree_perf  [kernel.kallsyms]    [k] irq_work_interrupt
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] irq_exit
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] __softirqentry_text_start
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] run_rebalance_domains
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] update_blocked_averages
+     0.02%     0.02%  kdtree_perf  [kernel.kallsyms]    [k] __mod_memcg_state
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] __mod_lruvec_state
+     0.02%     0.00%  kdtree_perf  libc-2.31.so         [.] __brk
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] __x64_sys_brk
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] do_brk_flags
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] perf_event_mmap
+     0.02%     0.02%  kdtree_perf  kdtree_perf          [.] std::_Vector_base<int*, std::allocator<int*> >::_M_get_Tp_allocator
+     0.02%     0.02%  kdtree_perf  [kernel.kallsyms]    [k] mem_cgroup_from_task
+     0.02%     0.02%  kdtree_perf  [kernel.kallsyms]    [k] page_mapping
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] __pagevec_lru_add_fn
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] page_evictable
+     0.02%     0.00%  kdtree_perf  kdtree_perf          [.] std::_Vector_base<int*, std::allocator<int*> >::_Vector_impl::_Vector_impl
+     0.02%     0.02%  kdtree_perf  [kernel.kallsyms]    [k] pmd_devmap_trans_unstable
+     0.02%     0.02%  kdtree_perf  [kernel.kallsyms]    [k] mem_cgroup_uncharge_list
+     0.02%     0.02%  kdtree_perf  [kernel.kallsyms]    [k] should_fail_alloc_page
+     0.02%     0.00%  kdtree_perf  libc-2.31.so         [.] sysmalloc
+     0.02%     0.02%  kdtree_perf  kdtree_perf          [.] std::vector<int*, std::allocator<int*> >::_S_max_size
+     0.02%     0.02%  kdtree_perf  [kernel.kallsyms]    [k] rmqueue
+     0.02%     0.02%  kdtree_perf  kdtree_perf          [.] std::vector<int*, std::allocator<int*> >::operator[]
+     0.02%     0.02%  kdtree_perf  kdtree_perf          [.] std::allocator<int*>::~allocator
+     0.02%     0.02%  kdtree_perf  [kernel.kallsyms]    [k] try_charge
+     0.02%     0.02%  kdtree_perf  libc-2.31.so         [.] _IO_file_xsputn@@GLIBC_2.2.5
+     0.02%     0.02%  kdtree_perf  [kernel.kallsyms]    [k] cpufreq_this_cpu_can_update
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] hrtimer_interrupt
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] __hrtimer_run_queues
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] tick_sched_timer
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] tick_sched_handle
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] update_process_times
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] scheduler_tick
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] task_tick_fair
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] update_load_avg
+     0.02%     0.02%  kdtree_perf  [kernel.kallsyms]    [k] free_unref_page_prepare.part.0
+     0.02%     0.00%  kdtree_perf  libc-2.31.so         [.] __munmap
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] __x64_sys_munmap
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] __vm_munmap
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] __do_munmap
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] unmap_region
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] tlb_finish_mmu
+     0.02%     0.02%  kdtree_perf  libc-2.31.so         [.] __vfprintf_internal
+     0.02%     0.02%  kdtree_perf  kdtree_perf          [.] std::__lg
+     0.02%     0.02%  kdtree_perf  kdtree_perf          [.] __gnu_cxx::new_allocator<int*>::max_size
+     0.02%     0.02%  kdtree_perf  kdtree_perf          [.] newNode
+     0.02%     0.00%  kdtree_perf  kdtree_perf          [.] std::__niter_wrap<__gnu_cxx::__normal_iterator<int**, std::vector<int*, std::allocator<int*> > >, int**>
+     0.02%     0.02%  kdtree_perf  [kernel.kallsyms]    [k] free_pcppages_bulk
+     0.02%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] free_unref_page_commit
+     0.02%     0.02%  kdtree_perf  [kernel.kallsyms]    [k] swapgs_restore_regs_and_return_to_usermode
+     0.02%     0.02%  kdtree_perf  [kernel.kallsyms]    [k] page_remove_rmap
+     0.02%     0.02%  kdtree_perf  kdtree_perf          [.] __gnu_cxx::operator==<int**, std::vector<int*, std::allocator<int*> > >
+     0.02%     0.02%  kdtree_perf  kdtree_perf          [.] std::_Destroy_aux<true>::__destroy<int**>
+     0.02%     0.00%  kdtree_perf  kdtree_perf          [.] std::_Destroy<int**, int*>
+     0.02%     0.00%  kdtree_perf  kdtree_perf          [.] std::_Destroy<int**>
+     0.02%     0.02%  kdtree_perf  [kernel.kallsyms]    [k] error_entry
+     0.02%     0.02%  kdtree_perf  libstdc++.so.6.0.28  [.] operator new
+     0.02%     0.02%  kdtree_perf  [kernel.kallsyms]    [k] sync_regs
+     0.01%     0.01%  kdtree_perf  [kernel.kallsyms]    [k] copy_user_generic_string
+     0.01%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] __x64_sys_read
+     0.01%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] ksys_read
+     0.01%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] vfs_read
+     0.01%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] __vfs_read
+     0.01%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] new_sync_read
+     0.01%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] ext4_file_read_iter
+     0.01%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] generic_file_read_iter
+     0.01%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] generic_file_buffered_read
+     0.01%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] copy_page_to_iter
+     0.00%     0.00%  kdtree_perf  [unknown]            [k] 0x00007fd9cad582fb
+     0.00%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] __x64_sys_execve
+     0.00%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] __do_execve_file.isra.0
+     0.00%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] search_binary_handler
+     0.00%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] load_elf_binary
+     0.00%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] strnlen_user
+     0.00%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] create_elf_tables
+     0.00%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] setup_new_exec
+     0.00%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] __set_task_comm
+     0.00%     0.00%  kdtree_perf  [kernel.kallsyms]    [k] perf_event_comm
+     0.00%     0.00%  perf         [kernel.kallsyms]    [k] strlen
+     0.00%     0.00%  perf         [unknown]            [k] 0x00007fd9cad582fb
+     0.00%     0.00%  perf         [kernel.kallsyms]    [k] entry_SYSCALL_64_after_hwframe
+     0.00%     0.00%  perf         [kernel.kallsyms]    [k] do_syscall_64
+     0.00%     0.00%  perf         [kernel.kallsyms]    [k] __x64_sys_execve
+     0.00%     0.00%  perf         [kernel.kallsyms]    [k] __do_execve_file.isra.0
+     0.00%     0.00%  perf         [kernel.kallsyms]    [k] search_binary_handler
+     0.00%     0.00%  perf         [kernel.kallsyms]    [k] load_elf_binary
+     0.00%     0.00%  perf         [kernel.kallsyms]    [k] setup_new_exec
+     0.00%     0.00%  perf         [kernel.kallsyms]    [k] __set_task_comm
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

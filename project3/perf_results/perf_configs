@@ -1,0 +1,8 @@
+perf tool configurations
+
+analysis Points    Querries
+1 (dim4) Medium    Small
+2 (dim4) Small     Large      
+3 (dim5) Small     Large
+4 (dim5) Medium    Small
+
