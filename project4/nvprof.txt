@@ -1,0 +1,205 @@
+NVPROF OUTPUTS
+9216 reads, read_len = 100
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   99.97%  20.2041s         1  20.2041s  20.2041s  20.2041s  match_k_mer_g(int*, int*, int, char*, char*, int, int, int)
+                    0.02%  3.1570ms         4  789.25us  81.856us  1.4349ms  [CUDA memcpy HtoD]
+                    0.01%  2.7779ms         2  1.3890ms  1.3787ms  1.3992ms  [CUDA memcpy DtoH]
+      API calls:   99.33%  20.2106s         6  3.36843s  123.71us  20.2056s  cudaMemcpy
+                    0.67%  135.45ms         4  33.863ms  69.360us  135.23ms  cudaMalloc
+                    0.00%  881.88us         4  220.47us  75.250us  345.55us  cudaFree
+                    0.00%  383.87us         1  383.87us  383.87us  383.87us  cuDeviceTotalMem
+                    0.00%  236.50us       101  2.3410us     260ns  97.570us  cuDeviceGetAttribute
+                    0.00%  34.441us         1  34.441us  34.441us  34.441us  cuDeviceGetName
+                    0.00%  28.020us         1  28.020us  28.020us  28.020us  cudaLaunchKernel
+                    0.00%  5.5300us         1  5.5300us  5.5300us  5.5300us  cuDeviceGetPCIBusId
+                    0.00%  2.1700us         3     723ns     370ns  1.1600us  cuDeviceGetCount
+                    0.00%  1.1200us         2     560ns     360ns     760ns  cuDeviceGet
+                    0.00%     430ns         1     430ns     430ns     430ns  cuDeviceGetUuid
+///////////////////////////
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   99.97%  20.3720s         1  20.3720s  20.3720s  20.3720s  match_k_mer_g(int*, int*, int, char*, char*, int, int, int)
+                    0.02%  3.1287ms         4  782.17us  81.952us  1.3425ms  [CUDA memcpy HtoD]
+                    0.01%  2.7008ms         2  1.3504ms  1.3412ms  1.3595ms  [CUDA memcpy DtoH]
+      API calls:   99.35%  20.3784s         6  3.39639s  123.59us  20.3735s  cudaMemcpy
+                    0.65%  132.49ms         4  33.123ms  68.460us  132.27ms  cudaMalloc
+                    0.00%  902.78us         4  225.69us  65.010us  340.70us  cudaFree
+                    0.00%  393.99us         1  393.99us  393.99us  393.99us  cuDeviceTotalMem
+                    0.00%  239.18us       101  2.3680us     270ns  97.909us  cuDeviceGetAttribute
+                    0.00%  35.130us         1  35.130us  35.130us  35.130us  cuDeviceGetName
+                    0.00%  27.730us         1  27.730us  27.730us  27.730us  cudaLaunchKernel
+                    0.00%  6.1700us         1  6.1700us  6.1700us  6.1700us  cuDeviceGetPCIBusId
+                    0.00%  2.0700us         3     690ns     360ns  1.1900us  cuDeviceGetCount
+                    0.00%  1.2600us         2     630ns     310ns     950ns  cuDeviceGet
+                    0.00%     450ns         1     450ns     450ns     450ns  cuDeviceGetUuid                   
+4608 reads, read_len = 102
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   99.94%  10.1474s         1  10.1474s  10.1474s  10.1474s  match_k_mer_g(int*, int*, int, char*, char*, int, int, int)
+                    0.03%  3.1341ms         4  783.53us  81.984us  1.3489ms  [CUDA memcpy HtoD]
+                    0.03%  2.6942ms         2  1.3471ms  1.3390ms  1.3552ms  [CUDA memcpy DtoH]
+      API calls:   98.49%  10.1538s         6  1.69229s  128.14us  10.1489s  cudaMemcpy
+                    1.49%  154.12ms         4  38.530ms  67.580us  153.90ms  cudaMalloc
+                    0.01%  850.13us         4  212.53us  67.500us  340.18us  cudaFree
+                    0.00%  333.03us         1  333.03us  333.03us  333.03us  cuDeviceTotalMem
+                    0.00%  224.35us       101  2.2210us     220ns  96.039us  cuDeviceGetAttribute
+                    0.00%  36.230us         1  36.230us  36.230us  36.230us  cuDeviceGetName
+                    0.00%  27.040us         1  27.040us  27.040us  27.040us  cudaLaunchKernel
+                    0.00%  5.7200us         1  5.7200us  5.7200us  5.7200us  cuDeviceGetPCIBusId
+                    0.00%  2.0400us         3     680ns     300ns  1.2700us  cuDeviceGetCount
+                    0.00%  1.1100us         2     555ns     270ns     840ns  cuDeviceGet
+                    0.00%     390ns         1     390ns     390ns     390ns  cuDeviceGetUuid
+/////////////////////////////
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   99.94%  10.1762s         1  10.1762s  10.1762s  10.1762s  match_k_mer_g(int*, int*, int, char*, char*, int, int, int)
+                    0.03%  3.2685ms         4  817.13us  81.951us  1.4514ms  [CUDA memcpy HtoD]
+                    0.03%  2.6791ms         2  1.3395ms  1.3275ms  1.3516ms  [CUDA memcpy DtoH]
+      API calls:   98.63%  10.1828s         6  1.69713s  125.49us  10.1778s  cudaMemcpy
+                    1.36%  140.01ms         4  35.003ms  69.520us  139.79ms  cudaMalloc
+                    0.01%  842.43us         4  210.61us  65.450us  342.31us  cudaFree
+                    0.00%  384.73us         1  384.73us  384.73us  384.73us  cuDeviceTotalMem
+                    0.00%  240.35us       101  2.3790us     260ns  98.100us  cuDeviceGetAttribute
+                    0.00%  34.820us         1  34.820us  34.820us  34.820us  cuDeviceGetName
+                    0.00%  29.010us         1  29.010us  29.010us  29.010us  cudaLaunchKernel
+                    0.00%  5.6900us         1  5.6900us  5.6900us  5.6900us  cuDeviceGetPCIBusId
+                    0.00%  2.2300us         3     743ns     390ns  1.1800us  cuDeviceGetCount
+                    0.00%  1.2700us         2     635ns     300ns     970ns  cuDeviceGet
+                    0.00%     450ns         1     450ns     450ns     450ns  cuDeviceGetUuid
+2304 reads, read_len = 39
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   99.69%  1.86312s         1  1.86312s  1.86312s  1.86312s  match_k_mer_g(int*, int*, int, char*, char*, int, int, int)
+                    0.17%  3.1596ms         4  789.91us  81.920us  1.3680ms  [CUDA memcpy HtoD]
+                    0.15%  2.7185ms         2  1.3593ms  1.3584ms  1.3602ms  [CUDA memcpy DtoH]
+      API calls:   92.74%  1.86954s         6  311.59ms  123.88us  1.86463s  cudaMemcpy
+                    7.19%  144.94ms         4  36.235ms  67.240us  144.72ms  cudaMalloc
+                    0.04%  837.54us         4  209.39us  65.220us  342.14us  cudaFree
+                    0.02%  330.62us         1  330.62us  330.62us  330.62us  cuDeviceTotalMem
+                    0.01%  231.12us       101  2.2880us     220ns  95.010us  cuDeviceGetAttribute
+                    0.00%  35.810us         1  35.810us  35.810us  35.810us  cuDeviceGetName
+                    0.00%  27.220us         1  27.220us  27.220us  27.220us  cudaLaunchKernel
+                    0.00%  5.7100us         1  5.7100us  5.7100us  5.7100us  cuDeviceGetPCIBusId
+                    0.00%  2.2100us         3     736ns     340ns  1.3900us  cuDeviceGetCount
+                    0.00%  1.0900us         2     545ns     260ns     830ns  cuDeviceGet
+                    0.00%     360ns         1     360ns     360ns     360ns  cuDeviceGetUuid
+
+////////////////////////
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   99.69%  1.87525s         1  1.87525s  1.87525s  1.87525s  match_k_mer_g(int*, int*, int, char*, char*, int, int, int)
+                    0.17%  3.1497ms         4  787.42us  81.888us  1.3799ms  [CUDA memcpy HtoD]
+                    0.14%  2.6598ms         2  1.3299ms  1.3223ms  1.3375ms  [CUDA memcpy DtoH]
+      API calls:   93.41%  1.88160s         6  313.60ms  126.56us  1.87673s  cudaMemcpy
+                    6.26%  126.02ms         4  31.506ms  68.110us  125.80ms  cudaMalloc
+                    0.30%  6.1340ms         4  1.5335ms  73.720us  5.3713ms  cudaFree
+                    0.02%  331.17us         1  331.17us  331.17us  331.17us  cuDeviceTotalMem
+                    0.01%  233.40us       101  2.3100us     220ns  97.790us  cuDeviceGetAttribute
+                    0.00%  35.840us         1  35.840us  35.840us  35.840us  cuDeviceGetName
+                    0.00%  26.580us         1  26.580us  26.580us  26.580us  cudaLaunchKernel
+                    0.00%  5.4000us         1  5.4000us  5.4000us  5.4000us  cuDeviceGetPCIBusId
+                    0.00%  2.1200us         3     706ns     360ns  1.3100us  cuDeviceGetCount
+                    0.00%  1.1400us         2     570ns     260ns     880ns  cuDeviceGet
+                    0.00%     450ns         1     450ns     450ns     450ns  cuDeviceGetUuid
+
+1152 reads, read_len = 165
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   99.86%  4.14133s         1  4.14133s  4.14133s  4.14133s  match_k_mer_g(int*, int*, int, char*, char*, int, int, int)
+                    0.08%  3.1475ms         4  786.88us  81.919us  1.3444ms  [CUDA memcpy HtoD]
+                    0.07%  2.7854ms         2  1.3927ms  1.3926ms  1.3929ms  [CUDA memcpy DtoH]
+      API calls:   96.60%  4.14778s         6  691.30ms  132.48us  4.14287s  cudaMemcpy
+                    3.37%  144.68ms         4  36.170ms  68.039us  144.46ms  cudaMalloc
+                    0.02%  843.28us         4  210.82us  65.880us  342.83us  cudaFree
+                    0.01%  259.15us         1  259.15us  259.15us  259.15us  cuDeviceTotalMem
+                    0.00%  190.70us       101  1.8880us     170ns  81.500us  cuDeviceGetAttribute
+                    0.00%  27.090us         1  27.090us  27.090us  27.090us  cudaLaunchKernel
+                    0.00%  25.070us         1  25.070us  25.070us  25.070us  cuDeviceGetName
+                    0.00%  5.7300us         1  5.7300us  5.7300us  5.7300us  cuDeviceGetPCIBusId
+                    0.00%  1.8300us         3     610ns     390ns     730ns  cuDeviceGetCount
+                    0.00%     670ns         2     335ns     200ns     470ns  cuDeviceGet
+                    0.00%     300ns         1     300ns     300ns     300ns  cuDeviceGetUuid
+/////////////////////////////////////////////////
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   99.86%  4.12887s         1  4.12887s  4.12887s  4.12887s  match_k_mer_g(int*, int*, int, char*, char*, int, int, int)
+                    0.08%  3.1680ms         4  792.00us  81.920us  1.3917ms  [CUDA memcpy HtoD]
+                    0.07%  2.7237ms         2  1.3618ms  1.3435ms  1.3802ms  [CUDA memcpy DtoH]
+      API calls:   96.63%  4.13527s         6  689.21ms  127.11us  4.13041s  cudaMemcpy
+                    3.34%  142.76ms         4  35.691ms  68.290us  142.55ms  cudaMalloc
+                    0.02%  841.31us         4  210.33us  65.450us  340.48us  cudaFree
+                    0.01%  329.62us         1  329.62us  329.62us  329.62us  cuDeviceTotalMem
+                    0.01%  216.20us       101  2.1400us     220ns  91.180us  cuDeviceGetAttribute
+                    0.00%  30.930us         1  30.930us  30.930us  30.930us  cuDeviceGetName
+                    0.00%  26.890us         1  26.890us  26.890us  26.890us  cudaLaunchKernel
+                    0.00%  4.8600us         1  4.8600us  4.8600us  4.8600us  cuDeviceGetPCIBusId
+                    0.00%  1.8900us         3     630ns     300ns  1.0800us  cuDeviceGetCount
+                    0.00%     870ns         2     435ns     260ns     610ns  cuDeviceGet
+                    0.00%     390ns         1     390ns     390ns     390ns  cuDeviceGetUuid
+576 reads, read_len = 115
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   99.60%  1.45550s         1  1.45550s  1.45550s  1.45550s  match_k_mer_g(int*, int*, int, char*, char*, int, int, int)
+                    0.21%  3.0454ms         4  761.36us  82.336us  1.3339ms  [CUDA memcpy HtoD]
+                    0.19%  2.7358ms         2  1.3679ms  1.3499ms  1.3860ms  [CUDA memcpy DtoH]
+      API calls:   91.24%  1.46188s         6  243.65ms  126.46us  1.45710s  cudaMemcpy
+                    8.67%  138.93ms         4  34.733ms  71.849us  138.55ms  cudaMalloc
+                    0.05%  859.16us         4  214.79us  65.169us  348.95us  cudaFree
+                    0.02%  265.32us         1  265.32us  265.32us  265.32us  cuDeviceTotalMem
+                    0.01%  197.25us       101  1.9520us     180ns  85.060us  cuDeviceGetAttribute
+                    0.00%  31.140us         1  31.140us  31.140us  31.140us  cuDeviceGetName
+                    0.00%  27.359us         1  27.359us  27.359us  27.359us  cudaLaunchKernel
+                    0.00%  4.9600us         1  4.9600us  4.9600us  4.9600us  cuDeviceGetPCIBusId
+                    0.00%  1.8200us         3     606ns     250ns  1.1800us  cuDeviceGetCount
+                    0.00%     880ns         2     440ns     220ns     660ns  cuDeviceGet
+                    0.00%     300ns         1     300ns     300ns     300ns  cuDeviceGetUuid
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+/////////////////////////////////////////////// 
+ GPU activities:   99.60%  1.45696s         1  1.45696s  1.45696s  1.45696s  match_k_mer_g(int*, int*, int, char*, char*, int, int, int)
+                    0.21%  3.0989ms         4  774.73us  81.888us  1.3358ms  [CUDA memcpy HtoD]
+                    0.18%  2.6850ms         2  1.3425ms  1.3373ms  1.3476ms  [CUDA memcpy DtoH]
+      API calls:   91.89%  1.46329s         6  243.88ms  124.03us  1.45845s  cudaMemcpy
+                    8.01%  127.61ms         4  31.903ms  69.180us  127.39ms  cudaMalloc
+                    0.05%  839.07us         4  209.77us  64.830us  340.94us  cudaFree
+                    0.02%  334.61us         1  334.61us  334.61us  334.61us  cuDeviceTotalMem
+                    0.01%  224.44us       101  2.2220us     230ns  95.520us  cuDeviceGetAttribute
+                    0.01%  122.74us         1  122.74us  122.74us  122.74us  cuDeviceGetName
+                    0.00%  28.260us         1  28.260us  28.260us  28.260us  cudaLaunchKernel
+                    0.00%  7.0200us         1  7.0200us  7.0200us  7.0200us  cuDeviceGetPCIBusId
+                    0.00%  2.4600us         3     820ns     490ns  1.3200us  cuDeviceGetCount
+                    0.00%  1.1400us         2     570ns     370ns     770ns  cuDeviceGet
+                    0.00%     390ns         1     390ns     390ns     390ns  cuDeviceGetUuid
+32 reads, read_len = 125
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.30%  117.67ms         1  117.67ms  117.67ms  117.67ms  match_k_mer_g(int*, int*, int, char*, char*, int, int, int)
+                    2.53%  3.1200ms         4  780.01us  81.889us  1.3598ms  [CUDA memcpy HtoD]
+                    2.17%  2.6784ms         2  1.3392ms  1.3336ms  1.3448ms  [CUDA memcpy DtoH]
+      API calls:   51.04%  131.06ms         4  32.765ms  66.290us  130.84ms  cudaMalloc
+                   48.30%  124.01ms         6  20.668ms  126.06us  119.15ms  cudaMemcpy
+                    0.39%  999.22us         4  249.81us  74.270us  413.24us  cudaFree
+                    0.15%  383.68us         1  383.68us  383.68us  383.68us  cuDeviceTotalMem
+                    0.09%  239.07us       101  2.3670us     260ns  99.260us  cuDeviceGetAttribute
+                    0.01%  34.530us         1  34.530us  34.530us  34.530us  cuDeviceGetName
+                    0.01%  28.300us         1  28.300us  28.300us  28.300us  cudaLaunchKernel
+                    0.00%  5.2400us         1  5.2400us  5.2400us  5.2400us  cuDeviceGetPCIBusId
+                    0.00%  2.4600us         3     820ns     540ns  1.2900us  cuDeviceGetCount
+                    0.00%  1.0700us         2     535ns     340ns     730ns  cuDeviceGet
+                    0.00%     510ns         1     510ns     510ns     510ns  cuDeviceGetUuid
+////////////////////////////////////////
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.26%  117.32ms         1  117.32ms  117.32ms  117.32ms  match_k_mer_g(int*, int*, int, char*, char*, int, int, int)
+                    2.53%  3.1198ms         4  779.95us  82.240us  1.3527ms  [CUDA memcpy HtoD]
+                    2.20%  2.7150ms         2  1.3575ms  1.3529ms  1.3621ms  [CUDA memcpy DtoH]
+      API calls:   50.69%  128.71ms         4  32.177ms  66.060us  128.49ms  cudaMalloc
+                   48.72%  123.71ms         6  20.618ms  132.57us  118.83ms  cudaMemcpy
+                    0.39%  979.82us         4  244.96us  72.760us  406.24us  cudaFree
+                    0.10%  258.47us         1  258.47us  258.47us  258.47us  cuDeviceTotalMem
+                    0.07%  189.23us       101  1.8730us     180ns  79.520us  cuDeviceGetAttribute
+                    0.01%  28.000us         1  28.000us  28.000us  28.000us  cudaLaunchKernel
+                    0.01%  26.600us         1  26.600us  26.600us  26.600us  cuDeviceGetName
+                    0.00%  5.4300us         1  5.4300us  5.4300us  5.4300us  cuDeviceGetPCIBusId
+                    0.00%  1.7600us         3     586ns     420ns     920ns  cuDeviceGetCount
+                    0.00%     770ns         2     385ns     210ns     560ns  cuDeviceGet
+                    0.00%     310ns         1     310ns     310ns     310ns  cuDeviceGetUuid
+
+///////////////////////////////////////////////////////
+serial times
+9216:3m40,333s
+4608:1m52,057s
+2304:0m20,456s
+1152:0m45,708s
+576:0m15,849s
+32:0m0,974s
+
